@@ -3,7 +3,7 @@ import uvicorn
 import json
 import asyncio
 
-app = FastAPI(title="Beethoven MCP Server")
+app = FastAPI(title="[test_name] MCP Server")
 
 @app.get("/")
 async def root():
