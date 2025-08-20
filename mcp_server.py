@@ -67,7 +67,7 @@ async def mcp_endpoint(websocket: WebSocket):
                 arguments = data.get("params", {}).get("arguments", {})
                 
                 if tool_name == "echo":
-                    message = arguments.get("message", "Hello from Beethoven!")
+                    message = arguments.get("message", "Hello from [test_name]!")
                     response = {
                         "jsonrpc": "2.0",
                         "id": data.get("id"),
